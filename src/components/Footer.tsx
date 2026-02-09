@@ -13,7 +13,7 @@ export const Footer: React.FC = () => {
           <div className="flex items-center space-x-2 mb-4">
             <img src={shiplogo} alt="Swift Logistics" className="h-10 w-auto" />
             <h2 className="text-2xl font-semibold">
-              Ship My Ship<span className="text-yellow-400">Car</span>
+              Ship My<span className="text-yellow-400">Car</span
             </h2>
           </div>
           <p className="text-gray-300 leading-relaxed">
