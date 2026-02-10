@@ -95,11 +95,6 @@ const Services: React.FC = () => {
           >
             <source src="/videos/videocargo.mp4" type="video/mp4" />
           </video>
-        {/* <img
-          src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7"
-          alt="Logistics Services"
-          className="absolute inset-0 w-full h-full object-cover"
-        /> */}
         <div className="absolute inset-0 bg-blue-900/70"></div>
 
         <div className="relative text-center text-white px-4">
