@@ -139,6 +139,11 @@ export const Footer: React.FC = () => {
 
       <div className="text-center py-4 text-gray-400 text-sm">
         © {new Date().getFullYear()} Ship Mycar. All rights reserved.
+
+        <li 
+        onClick={() => navigate("/termsandconditons")}
+        className="cursor-pointer hover:text-yellow-400 hover:underline transition-colors inline-block ml-4"
+        >Terms and Conditons</li>
       </div>
     </footer>
   );

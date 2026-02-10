@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route,  } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import About from "../pages/About";
 import Services from "@/pages/Services";
 import ContactMe from "@/pages/Contact";
@@ -9,6 +9,7 @@ import GalleryImages from "@/components/GalleryImages";
 import HouseholdMoving from "@/components/HouseHoldMoving";
 import CarTransportation from "@/components/CarTransportation";
 import IntercityTransport from "@/pages/IntercityTransport";
+import TermsAndConditions from "@/pages/TermsAndConditons";
 
 function App() {
   return (
@@ -18,12 +19,12 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/galleryimages" element={<GalleryImages/>} />
+          <Route path="/galleryimages" element={<GalleryImages />} />
           <Route path="/contact" element={<ContactMe />} />
           <Route path="/householdmoving" element={<HouseholdMoving />} />
           <Route path="/cartransportation" element={<CarTransportation />} />
           <Route path="/intercity-transport" element={<IntercityTransport />} />
-
+          <Route path="/termsandconditons" element={<TermsAndConditions />} />
         </Route>
       </Routes>
     </HashRouter>
