@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-import {
-  Mail,
-  Phone,
-  MapPin,
-  Send,
-  Facebook,
-  Instagram,
-} from "lucide-react";
+import { Mail, Phone, MapPin, Send, Facebook, Instagram } from "lucide-react";
 
 const ContactMe: React.FC = () => {
   const whatsappNumber = "918689049549"; // My WhatsApp number
@@ -19,7 +12,7 @@ const ContactMe: React.FC = () => {
   });
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -39,7 +32,7 @@ ${formData.message}
     `;
 
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-      whatsappMessage
+      whatsappMessage,
     )}`;
 
     window.open(whatsappUrl, "_blank");
@@ -51,22 +44,17 @@ ${formData.message}
       className="bg-gradient-to-b from-blue-50 to-white py-20"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-     
         <div className="text-center mb-16">
           <h1 className="text-4xl font-extrabold text-blue-900 mb-4">
             Contact <span className="text-yellow-500">Us</span>
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Have questions or need a logistics quote?
-            We’re here to help you move forward.
+            Have questions or need a logistics quote? We’re here to help you
+            move forward.
           </p>
         </div>
 
-       
         <div className="grid md:grid-cols-2 gap-12">
-
-          
           <div className="bg-white rounded-2xl shadow-xl p-8">
             <h2 className="text-2xl font-semibold text-blue-900 mb-6">
               Send Us a Message
@@ -134,27 +122,26 @@ ${formData.message}
               icon={<MapPin />}
               title="Office 2nd Branch"
               text="📍 Hisar, 125001, India"
-           altText="📞 +91 8690309300"
+              altText="📞 +91 8690309300"
             />
 
-            <InfoCard
-              icon={<Phone />}
-              title="Phone"
-              text="📞 +91 8689049549"
-            />
-
+            <InfoCard icon={<Phone />} title="Phone" text="📞 +91 8689049549" />
             <InfoCard
               icon={<Mail />}
               title="Email"
-              text="📧 shipmycar42@gmail.com"
+              text={
+                <a
+                  href="mailto:shipmycar42@gmail.com"
+                  className="text-blue-600 hover:underline"
+                >
+                  📧 shipmycar42@gmail.com
+                </a>
+              }
               altText="Feel free to email us for any inquiries!"
-            
             />
 
             <div className="bg-blue-900 text-white rounded-2xl p-6">
-              <h3 className="text-xl font-semibold mb-2">
-                Working Hours
-              </h3>
+              <h3 className="text-xl font-semibold mb-2">Working Hours</h3>
               <p className="text-blue-100">
                 Monday – Saturday
                 <br />
@@ -174,7 +161,7 @@ ${formData.message}
               </a>
 
               <a
-                href="https://www.instagram.com/car.and.bike.transport?igsh=b3l1MW0yczJvN2d1"
+                href="https://www.instagram.com/ship.my.car?igsh=MXBtdnZkYXptaG0yaQ=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 text-white hover:scale-110 transition"
@@ -195,11 +182,10 @@ const InfoCard = ({
   title,
   text,
   altText,
-  
 }: {
   icon: React.ReactNode;
   title: string;
-  text: string;
+  text: React.ReactNode;
   altText?: string;
 }) => (
   <div className="bg-white rounded-2xl shadow-lg p-6 flex items-center gap-4 hover:shadow-xl transition">

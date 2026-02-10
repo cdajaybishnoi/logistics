@@ -27,7 +27,10 @@ export const Footer: React.FC = () => {
           </h3>
           <ul className="space-y-2 text-gray-300">
             <li>
-              <Link to="/" className="hover:text-yellow-400 hover:underline transition-colors">
+              <Link
+                to="/"
+                className="hover:text-yellow-400 hover:underline transition-colors"
+              >
                 Home
               </Link>
             </li>
@@ -126,7 +129,7 @@ export const Footer: React.FC = () => {
             </a>
 
             <a
-              href="https://www.instagram.com/car.and.bike.transport?igsh=b3l1MW0yczJvN2d1"
+              href="https://www.instagram.com/ship.my.car?igsh=MXBtdnZkYXptaG0yaQ=="
               className="hover:text-yellow-400 transition-transform transform hover:scale-110"
             >
               <FaInstagram />
@@ -139,11 +142,12 @@ export const Footer: React.FC = () => {
 
       <div className="text-center py-4 text-gray-400 text-sm">
         © {new Date().getFullYear()} Ship Mycar. All rights reserved.
-
-        <li 
-        onClick={() => navigate("/termsandconditons")}
-        className="cursor-pointer hover:text-yellow-400 hover:underline transition-colors inline-block ml-4"
-        >Terms and Conditons</li>
+        <li
+          onClick={() => navigate("/termsandconditons")}
+          className="cursor-pointer hover:text-yellow-400 hover:underline transition-colors inline-block ml-4"
+        >
+          Terms and Conditons
+        </li>
       </div>
     </footer>
   );
