@@ -128,6 +128,10 @@ const Services: React.FC = () => {
             />
           </div>
 
+          <div
+            onClick={() => navigate("/intercity-transport")}
+            style={{ cursor: "pointer" }}
+          >
           <ServiceCard
             icon={<Globe />}
             title="Intercity Transport"
@@ -135,6 +139,7 @@ const Services: React.FC = () => {
             image="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
             badges={["Active"]}
           />
+          </div>
 
           <ServiceCard
             icon={<Package />}

@@ -8,7 +8,6 @@ export const Footer: React.FC = () => {
   return (
     <footer className="bg-blue-900 text-white rounded-b-xl py-10 mt-auto shadow-inner">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
-        {/* 1️⃣ Company Info */}
         <div>
           <div className="flex items-center space-x-2 mb-4">
             <img src={shiplogo} alt="Swift Logistics" className="h-10 w-auto" />
@@ -22,21 +21,20 @@ export const Footer: React.FC = () => {
           </p>
         </div>
 
-        {/* 2️⃣ Quick Links */}
         <div>
           <h3 className="text-lg font-semibold mb-4 text-yellow-400">
             Quick Links
           </h3>
           <ul className="space-y-2 text-gray-300">
             <li>
-              <Link to="/" className="hover:text-yellow-400 transition-colors">
+              <Link to="/" className="hover:text-yellow-400 hover:underline transition-colors">
                 Home
               </Link>
             </li>
             <li>
               <Link
                 to="/about"
-                className="hover:text-yellow-400 transition-colors"
+                className="hover:text-yellow-400 hover:underline transition-colors"
               >
                 About
               </Link>
@@ -44,7 +42,7 @@ export const Footer: React.FC = () => {
             <li>
               <Link
                 to="/services"
-                className="hover:text-yellow-400 transition-colors"
+                className="hover:text-yellow-400 hover:underline transition-colors"
               >
                 Services
               </Link>
@@ -52,7 +50,7 @@ export const Footer: React.FC = () => {
             <li>
               <Link
                 to="/contact"
-                className="hover:text-yellow-400 transition-colors"
+                className="hover:text-yellow-400 hover:underline transition-colors"
               >
                 Contact
               </Link>
@@ -60,53 +58,47 @@ export const Footer: React.FC = () => {
           </ul>
         </div>
 
-        {/* 3️⃣ Services */}
-        {/* 3️⃣ Services */}
-<div>
-  <h3 className="text-lg font-semibold mb-4 text-yellow-400">
-    Our Services
-  </h3>
+        <div>
+          <h3 className="text-lg font-semibold mb-4 text-yellow-400">
+            Our Services
+          </h3>
 
-  <ul className="space-y-2 text-gray-300">
-    <li
-      onClick={() => navigate("/cartransportation")}
-      className="cursor-pointer text-yellow-400 hover:underline"
-    >
-      Car Transportation
-    </li>
+          <ul className="space-y-2 text-gray-300">
+            <li
+              onClick={() => navigate("/cartransportation")}
+              className="cursor-pointer hover:text-yellow-400 hover:underline"
+            >
+              Car Transportation
+            </li>
 
-    <li
-      onClick={() => navigate("/householdmoving")}
-      className="cursor-pointer text-yellow-400 hover:underline"
-    >
-      House Moving
-    </li>
-<br></br>
-    <li className="relative group cursor-not-allowed text-gray-400 inline-block">
-      Custom Clearing
-     <span
-      className="absolute left-1/2 -translate-x-1/2 -top-8
-      whitespace-nowrap rounded-md bg-black px-3 py-1 text-xs text-white
-      opacity-0 group-hover:opacity-30transition"
-    >
-      This is not available
-    </span>
-  </li>
+            <li
+              onClick={() => navigate("/householdmoving")}
+              className="cursor-pointer hover:text-yellow-400 hover:underline"
+            >
+              House Moving
+            </li>
+            <li
+              onClick={() => navigate("/intercity-transport")}
+              className="cursor-pointer hover:text-yellow-400 hover:underline"
+            >
+              Intercity Transport
+            </li>
 
-  <li className="relative group cursor-not-allowed text-gray-400">
-    Express Delivery
-    <span
-      className="absolute left-1/2 -translate-x-1/2 -top-8
+            <br></br>
+
+            <li className="relative group cursor-not-allowed text-gray-400">
+              Express Delivery
+              <span
+                className="absolute left-1/2 -translate-x-1/2 -top-8
       whitespace-nowrap rounded-md bg-black px-3 py-1 text-xs text-white
       opacity-0 group-hover:opacity-100 transition"
-    >
-      This is not available
-    </span>
-    </li>
-  </ul>
-</div>
+              >
+                This is not available
+              </span>
+            </li>
+          </ul>
+        </div>
 
-        {/* 4️⃣ Contact Info */}
         <div>
           <h3 className="text-lg font-semibold mb-4 text-yellow-400">
             Contact Us
@@ -143,7 +135,6 @@ export const Footer: React.FC = () => {
         </div>
       </div>
 
-      {/* Divider */}
       <div className="border-t border-blue-700 mt-10"></div>
 
       <div className="text-center py-4 text-gray-400 text-sm">

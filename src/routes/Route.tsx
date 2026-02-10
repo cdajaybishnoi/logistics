@@ -8,6 +8,7 @@ import Home from "@/pages/Home";
 import GalleryImages from "@/components/GalleryImages";
 import HouseholdMoving from "@/components/HouseHoldMoving";
 import CarTransportation from "@/components/CarTransportation";
+import IntercityTransport from "@/pages/IntercityTransport";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
           <Route path="/contact" element={<ContactMe />} />
           <Route path="/householdmoving" element={<HouseholdMoving />} />
           <Route path="/cartransportation" element={<CarTransportation />} />
-
+          <Route path="/intercity-transport" element={<IntercityTransport />} />
 
         </Route>
       </Routes>
