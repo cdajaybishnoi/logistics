@@ -81,7 +81,7 @@ export const Footer: React.FC = () => {
               onClick={() => navigate("/intercity-transport")}
               className="cursor-pointer hover:text-yellow-400 hover:underline"
             >
-              Intercity Transport
+              Intercity Transports
             </li>
 
             <br></br>

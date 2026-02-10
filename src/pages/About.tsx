@@ -1,19 +1,21 @@
-import { Truck, Users, Target, Eye, Heart, Award, Star, ThumbsUp } from "lucide-react";
+import {
+  Truck,
+  Users,
+  Target,
+  Eye,
+  Heart,
+  Award,
+  Star,
+  ThumbsUp,
+} from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-
-
-
-
-
-
 const About = () => {
- const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <section className="w-full bg-gradient-to-b from-blue-50 to-white py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
         <div className="text-center mb-20">
           <h1 className="text-5xl font-extrabold text-blue-900 mb-4">
             About <span className="text-yellow-500">SHIP MyCAR</span>
@@ -30,14 +32,17 @@ const About = () => {
               Our Journey
             </h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Welcome to <strong>SHIP MYCAR</strong>, an established shifting
-              firm with more than Six years of experience in the transportation
-              industry. Founded in Gurugram, we have grown into a multinational
-              logistics company.
+              Welcome to{" "}
+              <strong>
+                <span className="text-yellow-500">SHIP MyCAR</span>
+              </strong>
+              , an established shifting firm with more than Six years of
+              experience in the transportation industry. Founded in Gurugram, we
+              have grown into a multinational logistics company.
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Today, we proudly serve over <strong>10,000 happy clients</strong>,
-              offering reliable, technology-driven logistics solutions across
+              Today, we proudly serve over <strong>10,000 happy clients</strong>
+              , offering reliable, technology-driven logistics solutions across
               India and beyond.
             </p>
           </div>
@@ -45,7 +50,11 @@ const About = () => {
           {/* Stats */}
           <div className="grid grid-cols-2 gap-6">
             <StatCard icon={<Users />} value="10,000+" label="Happy Clients" />
-            <StatCard icon={<Truck />} value="6,000+" label="Active Customers" />
+            <StatCard
+              icon={<Truck />}
+              value="6,000+"
+              label="Active Customers"
+            />
             <StatCard icon={<Target />} value="6+ Years" label="Experience" />
             <StatCard icon={<Heart />} value="100%" label="Commitment" />
           </div>
@@ -70,20 +79,36 @@ const About = () => {
           />
         </div>
 
-        {/* Intracity Section */}
         <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-blue-900 to-blue-700 text-white p-12 mb-20">
           <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_top,_white,_transparent)]"></div>
-          <h2 className="text-3xl font-bold mb-4">
-            Intracity Transportation Solutions
-          </h2>
+          <h2 className="text-3xl font-bold mb-4">Transportation Solutions</h2>
           <p className="max-w-6xl leading-relaxed text-blue-100">
-     If you are looking for safe and dependable car or bike transportation anywhere in India, you are in the right place. SHIP MYCAR connects you with trusted and experienced vehicle transport professionals across the country. From pickup to final delivery, we ensure that your vehicle is handled with care, transparency, and responsibility. Our platform provides verified information and real customer experiences, helping you choose the most suitable vehicle transportation service with confidence.
-
-Relocating to a new city for a job, marriage, or personal reasons often comes with many challenges—and transporting your vehicle shouldn’t be one of them. Having your own car or bike at your new location makes daily travel easier and more comfortable. At SHIP MYCAR, we focus on expert vehicle handling, clear communication, and customer-centric service for every car shipment in India. Since vehicle relocation requires trust and reliability, we work only with verified partners to make your move smooth, secure, and stress-free for you and your family.
+            If you are looking for safe and dependable car or bike
+            transportation anywhere in India, you are in the right place.{" "}
+            <strong>
+              <span className="text-yellow-500">SHIP MyCAR</span>
+            </strong>{" "}
+            connects you with trusted and experienced vehicle transport
+            professionals across the country. From pickup to final delivery, we
+            ensure that your vehicle is handled with care, transparency, and
+            responsibility. Our platform provides verified information and real
+            customer experiences, helping you choose the most suitable vehicle
+            transportation service with confidence. Relocating to a new city for
+            a job, marriage, or personal reasons often comes with many
+            challenges—and transporting your vehicle shouldn’t be one of them.
+            Having your own car or bike at your new location makes daily travel
+            easier and more comfortable. At{" "}
+            <strong>
+              <span className="text-yellow-500">SHIP MyCAR</span>
+            </strong>
+            , we focus on expert vehicle handling, clear communication, and
+            customer-centric service for every car shipment in India. Since
+            vehicle relocation requires trust and reliability, we work only with
+            verified partners to make your move smooth, secure, and stress-free
+            for you and your family.
           </p>
         </div>
 
-        {/* Awards & Achievements */}
         <div className="mb-20 text-center">
           <h2 className="text-4xl font-extrabold text-blue-900 mb-8">
             Awards & Achievements
@@ -107,10 +132,9 @@ Relocating to a new city for a job, marriage, or personal reasons often comes wi
           </div>
         </div>
 
-        {/* Why Choose Us */}
         <div className="mb-20 text-center">
           <h2 className="text-4xl font-extrabold text-blue-900 mb-8">
-            Why Choose SHIP MyCAR
+            Why Choose <span className="text-yellow-500">SHIP MyCAR</span>
           </h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <USPCard
@@ -128,7 +152,6 @@ Relocating to a new city for a job, marriage, or personal reasons often comes wi
           </div>
         </div>
 
-        {/* Testimonials / Smooth Carousel */}
         <div className="mb-20 text-center">
           <h2 className="text-4xl font-extrabold text-blue-900 mb-8">
             What Our Clients Say
@@ -160,9 +183,10 @@ Relocating to a new city for a job, marriage, or personal reasons often comes wi
 
         {/* CTA */}
         <div className="text-center">
-          <button 
-          onClick={() => navigate("/contact")} 
-          className="px-12 py-4 text-xl font-bold rounded-full bg-blue-900 text-white hover:bg-blue-800 transition shadow-xl">
+          <button
+            onClick={() => navigate("/contact")}
+            className="px-12 py-4 text-xl font-bold rounded-full bg-blue-900 text-white hover:bg-blue-800 transition shadow-xl"
+          >
             Get a Quote Today
           </button>
         </div>
@@ -170,8 +194,6 @@ Relocating to a new city for a job, marriage, or personal reasons often comes wi
     </section>
   );
 };
-
-
 
 const StatCard = ({
   icon,
