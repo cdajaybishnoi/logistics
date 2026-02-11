@@ -113,8 +113,8 @@ const TermsAndConditions: React.FC = () => {
         <Block icon={<LockKeyhole/>} title="7. Data Protection & Security">
           Security ShipMyCar takes reasonable technical and organizational
           measures to safeguard user data from:
-          {/* <br />
-          <br /> */}
+          <br />
+          <br />
           Unauthorized access, Data loss, Misuse, Disclosure While we implement
           security practices, no digital transmission method is 100% secure.
           Users share data at their own discretion.
