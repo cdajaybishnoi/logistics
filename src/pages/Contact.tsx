@@ -121,7 +121,7 @@ ${formData.message}
             <InfoCard
               icon={<MapPin />}
               title="Office 2nd Branch"
-              text="📍 Hisar, 125001, India"
+              text="📍 Hisar (Assist), 125001, India"
               altText="📞 +91 8690309300"
             />
 

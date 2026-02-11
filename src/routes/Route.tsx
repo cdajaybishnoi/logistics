@@ -10,10 +10,12 @@ import HouseholdMoving from "@/components/HouseHoldMoving";
 import CarTransportation from "@/components/CarTransportation";
 import IntercityTransport from "@/pages/IntercityTransport";
 import TermsAndConditions from "@/pages/TermsAndConditons";
+import ScrollToTop from "@/components/ScrollToTop";
 
 function App() {
   return (
     <HashRouter>
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
