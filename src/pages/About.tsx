@@ -47,7 +47,7 @@ const About = () => {
             </p>
           </div>
 
-          {/* Stats */}
+       
           <div className="grid grid-cols-2 gap-6">
             <StatCard icon={<Users />} value="10,000+" label="Happy Clients" />
             <StatCard
@@ -60,7 +60,7 @@ const About = () => {
           </div>
         </div>
 
-        {/* Vision Mission Values */}
+     
         <div className="grid md:grid-cols-3 gap-8 mb-24">
           <InfoCard
             icon={<Eye />}
@@ -181,7 +181,7 @@ const About = () => {
           </div>
         </div>
 
-        {/* CTA */}
+     
         <div className="text-center">
           <button
             onClick={() => navigate("/contact")}

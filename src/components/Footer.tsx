@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import shiplogo from "../assets/shiplogo.jpeg";
+import { MailPlus } from "lucide-react";
 
 export const Footer: React.FC = () => {
   const navigate = useNavigate();
@@ -116,7 +117,8 @@ export const Footer: React.FC = () => {
               href="mailto:shipmycar42@gmail.com"
               className="text-white hover:underline hover:text-yellow-400 transition-colors"
             >
-              ✉ shipmycar42@gmail.com
+               📨shipmycar42@gmail.com
+               
             </a>
           </ul>
 

@@ -1,154 +1,209 @@
 import React from "react";
+import {
+  ShieldCheck,
+  Scale,
+  Truck,
+  FileWarning,
+  Image,
+  Mail,
+  LockKeyhole,
+  ShieldUser,
+} from "lucide-react";
 
 const TermsAndConditions: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <div className="bg-blue-900 py-16 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-white">
-          Terms & Conditions
+    <div className="relative min-h-screen bg-black text-white overflow-hidden">
+      {/* 🔥 WATERMARK BACKGROUND */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
+        <h1 className="text-[120px] md:text-[200px] font-extrabold text-white opacity-5 tracking-widest rotate-[-20deg]">
+          SHIPMYCAR
         </h1>
-        <p className="mt-4 text-blue-100 max-w-2xl mx-auto">
-          Please read these terms carefully before using ShipMyCar services.
-        </p>
       </div>
 
-      {/* Content */}
-      <div className="max-w-5xl mx-auto px-4 py-16 space-y-10">
-        
-        {/* Introduction */}
-        <section>
-          <p className="text-gray-700 leading-relaxed">
-            Welcome to <span className="font-semibold text-blue-900">ShipMyCar</span>.
-            By accessing or using our website and services, you agree to comply
-            with and be bound by these Terms and Conditions. If you do not agree
-            with any part of these terms, please refrain from using our services.
+      {/* HERO SECTION */}
+      <section className="relative py-32 text-center bg-gradient-to-br from-blue-900 via-black to-blue-950">
+        <div className="max-w-4xl mx-auto px-4 relative z-10">
+          <h1 className="text-5xl md:text-6xl font-extrabold">ShipMyCar</h1>
+          <p className="mt-4 text-yellow-400 text-xl uppercase tracking-widest">
+            Official Terms & Conditions
           </p>
-        </section>
+          <p className="mt-6 text-gray-300 text-lg leading-relaxed">
+            This document defines the official operational standards,
+            responsibilities, and governing principles applicable to all
+            ShipMyCar services.
+          </p>
+        </div>
+      </section>
 
-        {/* About Services */}
-        <section>
-          <h2 className="text-2xl font-bold text-blue-900 mb-4">
-            1. About Our Services
-          </h2>
-          <p className="text-gray-700 leading-relaxed">
-            ShipMyCar provides logistics-related information and assistance for
-            vehicle and goods transportation. Service availability, pricing,
-            routes, and timelines may vary depending on location, requirements,
-            and operational conditions.
-          </p>
-        </section>
+      {/* CONTENT */}
+      <section className="relative max-w-6xl mx-auto px-6 py-24 space-y-20 z-10">
+        <Block icon={<Truck />} title="1. Our Commitment">
+          ShipMyCar operates as a professional logistics coordination platform
+          providing structured assistance for vehicle and goods transportation.
+          Our mission is to deliver transparency, reliability, and operational
+          efficiency across all supported locations.
+          <br />
+          <br />
+          While we strive to maintain high service standards, all commitments,
+          delivery timelines, route confirmations, and operational arrangements
+          remain subject to availability, feasibility, carrier conditions, and
+          regulatory requirements.
+        </Block>
 
-        {/* Website Usage */}
-        <section>
-          <h2 className="text-2xl font-bold text-blue-900 mb-4">
-            2. Use of Website
-          </h2>
-          <ul className="list-disc list-inside space-y-3 text-gray-700">
-            <li>You agree to use this website only for lawful purposes</li>
-            <li>You will not misuse, damage, or attempt to disrupt the website</li>
-            <li>You will not provide false or misleading information</li>
-          </ul>
-        </section>
+        <Block icon={<ShieldCheck />} title="2. User Responsibility">
+          Customers are solely responsible for providing complete and accurate
+          information related to vehicle details, pickup and delivery locations,
+          contact information, and any special handling requirements.
+          <br />
+          <br />
+          ShipMyCar shall not be liable for delays, additional costs, or
+          complications arising due to inaccurate or incomplete information
+          provided by the customer.
+        </Block>
 
-        {/* User Responsibilities */}
-        <section>
-          <h2 className="text-2xl font-bold text-blue-900 mb-4">
-            3. User Responsibilities
-          </h2>
-          <p className="text-gray-700 leading-relaxed">
-            Users are responsible for providing accurate details related to
-            shipments, vehicles, pickup, and delivery locations. ShipMyCar is
-            not responsible for issues arising from incorrect or incomplete
-            information provided by the user.
-          </p>
-        </section>
+        <Block icon={<Scale />} title="3. Booking & Pricing Terms">
+          All service requests are considered booking inquiries until formally
+          confirmed. Pricing provided through the website, email, or phone
+          remains indicative and subject to final operational verification.
+          <br />
+          <br />
+          Final charges may vary based on distance, vehicle type, fuel costs,
+          toll charges, route deviations, and logistical conditions.
+        </Block>
 
-        {/* Payments */}
-        <section>
-          <h2 className="text-2xl font-bold text-blue-900 mb-4">
-            4. Payments & Charges
-          </h2>
-          <p className="text-gray-700 leading-relaxed">
-            Any payments, charges, or quotes shared are subject to confirmation.
-            Final pricing may vary based on service requirements, distance,
-            and operational factors.
-          </p>
-        </section>
+        <Block icon={<FileWarning />} title="4. Limitation of Liability">
+          ShipMyCar shall not be held responsible for delays or disruptions
+          caused by circumstances beyond reasonable control, including but not
+          limited to traffic congestion, weather conditions, natural disasters,
+          regulatory actions, mechanical breakdowns, or force majeure events.
+          <br />
+          <br />
+          Transport operations inherently involve external risk factors, and
+          while we aim for safe and timely service, absolute guarantees cannot
+          be provided.
+        </Block>
 
-        {/* Limitation of Liability */}
-        <section>
-          <h2 className="text-2xl font-bold text-blue-900 mb-4">
-            5. Limitation of Liability
-          </h2>
-          <p className="text-gray-700 leading-relaxed">
-            ShipMyCar shall not be held liable for delays, losses, or damages
-            caused due to unforeseen circumstances such as traffic conditions,
-            weather issues, regulatory actions, or force majeure events.
-          </p>
-        </section>
+        <Block icon={<Image />} title="5. Media Usage & Content Credits">
+          Certain videos, images, and visual elements displayed on this website
+          may be sourced from public platforms such as YouTube or other
+          media-sharing websites.
+          <br />
+          <br />
+          These materials are used strictly for presentation, demonstration, and
+          design enhancement purposes. ShipMyCar does not claim ownership of
+          third-party media. All intellectual property rights remain with their
+          respective creators.
+          <br />
+          <br />
+          If any rightful content owner requests removal, appropriate action
+          will be taken promptly upon verification.
+        </Block>
 
-        {/* Media Credits */}
-        <section>
-          <h2 className="text-2xl font-bold text-blue-900 mb-4">
-            6. Media Usage & Credits
-          </h2>
-          <p className="text-gray-700 leading-relaxed">
-            Some videos and visual media displayed on this website are sourced
-            from public platforms such as YouTube and other media-sharing
-            websites. These media assets are used strictly for design,
-            presentation, and demonstration purposes only.
-          </p>
-          <p className="text-gray-700 leading-relaxed mt-3">
-            We do not claim ownership of any third-party media. All rights and
-            credits belong to their respective creators. There is no intention
-            to harm, disrespect, or misuse any content or creator.
-          </p>
-          <p className="text-gray-700 leading-relaxed mt-3">
-            If you are a content owner and believe your material has been used
-            unintentionally, please contact us and we will take prompt action.
-          </p>
-        </section>
+        <Block icon={<ShieldCheck />} title="6. Intellectual Property">
+          All original content, branding elements, logos, text, and website
+          design structure are the intellectual property of ShipMyCar unless
+          otherwise stated.
+          <br />
+          <br />
+          Unauthorized reproduction, redistribution, or commercial use of
+          original ShipMyCar content is strictly prohibited without prior
+          written permission.
+        </Block>
 
-        {/* External Links */}
-        <section>
-          <h2 className="text-2xl font-bold text-blue-900 mb-4">
-            7. External Links
-          </h2>
-          <p className="text-gray-700 leading-relaxed">
-            Our website may contain links to third-party websites. ShipMyCar is
-            not responsible for the content, policies, or practices of any
-            external sites.
-          </p>
-        </section>
+        <Block icon={<LockKeyhole/>} title="7. Data Protection & Security">
+          Security ShipMyCar takes reasonable technical and organizational
+          measures to safeguard user data from:
+          {/* <br />
+          <br /> */}
+          Unauthorized access, Data loss, Misuse, Disclosure While we implement
+          security practices, no digital transmission method is 100% secure.
+          Users share data at their own discretion.
+        </Block>
 
-        {/* Changes */}
-        <section>
-          <h2 className="text-2xl font-bold text-blue-900 mb-4">
-            8. Changes to Terms
-          </h2>
-          <p className="text-gray-700 leading-relaxed">
-            ShipMyCar reserves the right to update or modify these Terms and
-            Conditions at any time without prior notice. Continued use of the
-            website implies acceptance of the updated terms.
-          </p>
-        </section>
+        <Block icon={<ShieldUser />} title="8.How We Use Your Information">
+           Your information may be used for:
+          Processing service inquiries and bookings Contacting you regarding
+          shipment updates 
+          <br />
+          <br />
+          Improving website functionality, Enhancing customer
+          support, Internal record keeping, Preventing fraud or misuse. We do not
+          sell or rent your personal data to third parties.
+        </Block>
 
-        {/* Contact */}
-        <section>
-          <h2 className="text-2xl font-bold text-blue-900 mb-4">
-            9. Contact Us
-          </h2>
-          <p className="text-gray-700 leading-relaxed">
-            If you have any questions regarding these Terms and Conditions,
-            please reach out to us via our Contact page or official support
-            channels.
-          </p>
-        </section>
+        <Block icon={<Scale />} title="9. Policy Modifications">
+          ShipMyCar reserves the right to update, revise, or modify these Terms
+          & Conditions at any time without prior notice.
+          <br />
+          <br />
+          Continued use of the ShipMyCar website or services after updates
+          indicates acceptance of the revised terms.
+        </Block>
 
-      </div>
+        {/* ✍ SIGNATURE FOOTER */}
+        <div className="mt-24 border-t border-gray-700 pt-12 text-center">
+          <div className="bg-gradient-to-r from-blue-900 to-blue-700 p-10 rounded-3xl shadow-2xl inline-block">
+            <Mail className="mx-auto mb-4 w-8 h-8 text-yellow-400" />
+            <p className="text-blue-100 text-lg">
+              For legal or policy-related inquiries, please contact our official
+              support team.
+              <br></br>
+              <a
+                href="mailto:shipmycar42@gmail.com"
+                className="text-white hover:underline hover:text-yellow-400 transition-colors"
+              >
+                ✉ shipmycar42@gmail.com
+              </a>
+            </p>
+          </div>
+
+          <div className="mt-16">
+            <p className="text-yellow-400 font-semibold tracking-widest uppercase">
+              Official Policy Document
+            </p>
+
+            <h2 className="text-3xl font-extrabold mt-4">
+              ShipMyCar Logistics
+            </h2>
+
+            <p className="text-gray-400 mt-3">
+              Effective Date: {new Date().toLocaleDateString()}
+            </p>
+
+            <p className="text-gray-500 mt-3">
+              © {new Date().getFullYear()} ShipMyCar. All Rights Reserved.
+            </p>
+
+            <div className="mt-6 text-gray-600 text-sm italic">
+              This document represents the official service terms governing
+              ShipMyCar operations and platform usage.
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
 
 export default TermsAndConditions;
+
+/* 🔥 REUSABLE CONTENT BLOCK */
+const Block = ({
+  icon,
+  title,
+  children,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  children: React.ReactNode;
+}) => (
+  <div className="border-l-4 border-yellow-400 pl-8">
+    <div className="flex items-center gap-4 mb-6">
+      <div className="w-12 h-12 flex items-center justify-center bg-yellow-400 text-black rounded-xl">
+        {icon}
+      </div>
+      <h2 className="text-3xl font-bold tracking-tight">{title}</h2>
+    </div>
+    <p className="text-gray-300 text-lg leading-relaxed">{children}</p>
+  </div>
+);

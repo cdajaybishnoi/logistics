@@ -15,7 +15,7 @@ const IntercityTransport: React.FC = () => {
   return (
     <div className="flex flex-col ">
       <main className="flex-grow">
-        {/* Hero Section */}
+    
         <div className="relative h-[400px] flex items-center justify-center">
      
           <img
@@ -39,7 +39,6 @@ const IntercityTransport: React.FC = () => {
           </div>
         </div>
 
-        {/* Introduction */}
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold text-blue-900 mb-6">
@@ -56,7 +55,7 @@ const IntercityTransport: React.FC = () => {
           </div>
         </section>
 
-        {/* Key Features */}
+      
         <section className="py-16 bg-blue-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
@@ -131,7 +130,7 @@ const IntercityTransport: React.FC = () => {
           </div>
         </section>
 
-        {/* CTA Section */}
+        
         <section className="py-20  bg-blue-50  text-center">
           <div className="max-w-4xl mx-auto px-4">
             <h2 className="text-3xl md:text-4xl text-blue-900 font-bold mb-6">
