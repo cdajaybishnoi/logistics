@@ -11,6 +11,7 @@ import {
 const Services: React.FC = () => {
   const navigate = useNavigate();
 
+
   const deliveryCities = [
     "Gurgaon",
     "Agra",
@@ -127,7 +128,7 @@ const Services: React.FC = () => {
             <ServiceCard
               icon={<Truck />}
               title="Household Moving"
-              description="End-to-end moving solutions for homes and offices across cities, ensuring complete safety and timely delivery.Moving homes is more than shifting belongings—it’s about moving memories, comfort, and trust.Whether you’re moving across the city or to a new destination, our experienced team ensures your household goods reach your new home safely."
+              description="End-to-end moving solutions for homes and offices across cities, ensuring complete safety and timely delivery.Moving homes is more than shifting belongings—it’s about moving memories, comfort, and trust.Whether you’re moving across the city or to a new destination, our experienced team ensures your household goods reach your new home safely. Note-:( Available only in NCR )"
               image="https://images.unsplash.com/photo-1600518464441-9154a4dea21b"
               badges={["Active","Popular"]}
             />
@@ -141,7 +142,7 @@ const Services: React.FC = () => {
             icon={<Globe />}
             title="Intercity Transport"
             description="Intercity transport requires reliability, precision, and trust—and that’s exactly what we deliver. We provide safe and efficient transportation solutions designed to move your goods seamlessly between cities. Whether it’s household belongings, commercial consignments, or valuable cargo, our services ensure secure handling at every stage of the journey."
-            image="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+            image="https://imgs.search.brave.com/0nmeHFBe71S6RFXlSpWRbYnWiil1qhz4i4tR3DMMPZg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c2h1dHRlcnN0b2Nr/LmNvbS9pbWFnZS1w/aG90by9vdXRzaWRl/LWxvZ2lzdGljcy1k/aXN0cmlidXRpb25z/LXdhcmVob3VzZS1k/aXZlcnNlLTYwMG53/LTIwNDI5NTI0MjUu/anBn"
             badges={["Active"]}
           />
           </div>
@@ -166,7 +167,7 @@ const Services: React.FC = () => {
         <div className="text-center mt-20">
           <button
             onClick={() => navigate("/contact")}
-            className="px-10 py-4 text-xl font-bold rounded-full bg-blue-900 text-white hover:bg-blue-800 transition shadow-xl"
+            className="px-10 py-4 text-xl font-bold rounded-full hover:scale-105 bg-blue-900 text-white hover:bg-blue-800 transition shadow-xl"
           >
             Contact Us for Vehicle Transport Quote
           </button>
@@ -209,7 +210,7 @@ const Services: React.FC = () => {
             </p>
             <button
               onClick={() => navigate("/contact")}
-              className="px-10 py-4 text-xl font-bold rounded-full bg-blue-900 text-white hover:bg-blue-800 transition shadow-xl"
+              className="px-10 py-4 text-xl font-bold rounded-full bg-blue-900 text-white hover:bg-blue-800 transition  shadow-xl hover:scale-105"
             >
               Check Vehicle Transport Availability in Your City
             </button>

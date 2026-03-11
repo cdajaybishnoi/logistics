@@ -2,13 +2,7 @@ import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import {
-  Car,
-  ShieldCheck,
-  Truck,
-  Star,
-  IndianRupee,
-} from "lucide-react";
+import { Car, Truck, Star, IndianRupee, ChessKing } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -23,7 +17,7 @@ const CarTransportation = () => {
         gsap.from(el, {
           y: 80,
           opacity: 0,
-          duration: 1,
+          duration: 0.8,
           scrollTrigger: {
             trigger: el,
             start: "top 85%",
@@ -32,8 +26,8 @@ const CarTransportation = () => {
       });
 
       gsap.to(".reviews-track", {
-        xPercent: -50,
-        duration: 35,
+        xPercent: -40,
+        duration: 30,
         repeat: -1,
         ease: "linear",
       });
@@ -49,9 +43,7 @@ const CarTransportation = () => {
 
   return (
     <div ref={pageRef} className="text-blue-900 overflow-hidden">
-
       <section className="relative min-h-screen flex items-center overflow-hidden">
-
         <video
           ref={videoRef}
           autoPlay
@@ -64,12 +56,10 @@ const CarTransportation = () => {
           <source src="/videos/videoplayback_2.mp4" type="video/mp4" />
         </video>
 
-       
         <div className="absolute inset-0 bg-blue-900/75"></div>
 
         <div className="relative z-10 w-full px-4 sm:px-6">
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-
             <div className="fade-up text-white text-center md:text-left">
               <h1 className="font-extrabold leading-tight text-3xl sm:text-4xl md:text-6xl">
                 Car Transportation
@@ -99,7 +89,6 @@ const CarTransportation = () => {
                 className="rounded-3xl shadow-2xl"
               />
             </div>
-
           </div>
         </div>
       </section>
@@ -114,32 +103,76 @@ const CarTransportation = () => {
       </section>
 
       <section className="max-w-7xl mx-auto px-6 py-40">
-        <h2 className="text-4xl font-extrabold text-center mb-20">
+        <h2 className="text-4xl font-extrabold text-center mb-10">
           Car Transportation Pricing (By Vehicle Type)
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-14">
+        <p>
+          ⚠️Pricing is not fixed and may go up or down depending on circumstances.
+          The final price is negotiable and can be discussed based on your
+          requirements.
+        </p>
+
+        <div className="grid md:grid-cols-3 gap-14 pt-20">
           <PriceCard
             icon={<Car />}
             type="Hatchback"
-            price="₹6,000 – ₹12,000"
+            price="₹3,000 – ₹8,000"
             text="Swift, i10, Alto & similar cars"
           />
           <PriceCard
             icon={<Truck />}
             type="Sedan / SUV"
-            price="₹8,000 – ₹18,000"
-            text="City, Creta, Nexon, Scorpio"
+            price="₹6,000 – ₹12,000"
+            text="City, Verna, Fortuner, Scorpio"
             popular
           />
           <PriceCard
-            icon={<ShieldCheck />}
+            icon={<ChessKing />}
             type="Luxury / Sports"
-            price="₹15,000 – ₹35,000"
+            price="₹10,000 – ₹18,000"
             text="BMW, Audi, Mercedes (covered carrier)"
           />
         </div>
       </section>
+
+      <section className="py-24 bg-gray-900 text-white">
+  <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
+    {/* TEXT */}
+    <div className="space-y-6">
+      <h2 className="text-4xl font-bold">
+        Safe Car Transport. <span className="text-yellow-400">Zero Stress.</span>
+      </h2>
+
+      <p className="text-gray-300 text-lg leading-relaxed">
+        At ShipMyCar, we specialize in secure and reliable vehicle transportation.
+        From hatchbacks to luxury cars, every vehicle is handled with precision
+        and care throughout the journey.
+      </p>
+
+      <p className="text-gray-400">
+        Our GPS-enabled carriers and trained professionals ensure safe pickup,
+        transit, and doorstep delivery across India.
+      </p>
+    </div>
+
+    {/* IMAGE */}
+    <div className="relative">
+      <img
+        src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop"
+        alt="Car Transport"
+        className="rounded-3xl shadow-2xl"
+      />
+
+      <div className="absolute -bottom-6 -left-6 bg-yellow-400 text-black px-6 py-4 rounded-xl font-semibold shadow-xl">
+        Secure Vehicle Transport 🚗
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
       <section className="bg-gradient-to-b from-blue-50 to-white py-32 overflow-hidden">
         <h2 className="text-4xl font-extrabold text-center mb-16">
@@ -155,7 +188,6 @@ const CarTransportation = () => {
         </div>
       </section>
 
-      
       <section className="py-32 text-grey text-center ">
         <h2 className="text-5xl font-extrabold mb-6">
           Ready to Move Your Car?
@@ -173,8 +205,6 @@ const CarTransportation = () => {
     </div>
   );
 };
-
-
 
 const Info = ({ value, label }: { value: string; label: string }) => (
   <div>

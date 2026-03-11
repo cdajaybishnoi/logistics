@@ -15,7 +15,7 @@ const HouseholdMoving = () => {
       gsap.from(".hero", {
         y: 120,
         opacity: 0,
-        duration: 1.2,
+        duration: 0.8,
         ease: "power4.out",
       });
 
@@ -112,8 +112,8 @@ const HouseholdMoving = () => {
 
        <div className="-mt-32 relative z-10">
         <div className="max-w-6xl mx-auto bg-white rounded-3xl shadow-2xl grid grid-cols-2 md:grid-cols-4 text-center py-14">
-          <Stat value="3968" label="Houses Shifted" />
-          <Stat value="6" label="Years Experience" />
+          <Stat value="2968" label="Houses Shifted" />
+          <Stat value="3" label="Years Experience" />
           <Stat value="28" label="Cities Covered" />
           <Stat value="100" label="Safety %" />
         </div>
@@ -143,6 +143,41 @@ const HouseholdMoving = () => {
           />
         </div>
       </div>
+<section className="py-24 bg-blue-50">
+  <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
+    {/* IMAGE FIRST */}
+    <div className="relative order-2 md:order-1">
+      <img
+        src="https://media.istockphoto.com/id/2167994300/photo/caucasian-delivery-man-worker-delivering-package-to-young-couple-in-house-attractive-courier.jpg?s=1024x1024&w=is&k=20&c=OW-yxcXQ-XwQdZtN_pClyWOo81498wbTbCqRMBvH3v4="
+        alt="Household Moving"
+        className="rounded-3xl shadow-2xl"
+      />
+
+      <div className="absolute -bottom-6 -right-6 bg-yellow-500 text-blue-900 px-6 py-4 rounded-xl font-semibold shadow-xl">
+        Pan-India Relocation 🏠
+      </div>
+    </div>
+
+    {/* TEXT */}
+    <div className="space-y-6 order-1 md:order-2">
+      <h2 className="text-4xl font-bold text-blue-900">
+        Moving Homes. <span className="text-yellow-500">Moving Memories.</span>
+      </h2>
+
+      <p className="text-gray-700 text-lg leading-relaxed">
+        Whether you’re relocating within the city or across states,
+        ShipMyCar ensures smooth and damage-free household shifting.
+      </p>
+
+      <p className="text-gray-600">
+        From packing and loading to secure transportation and unpacking,
+        our experienced team manages every step with attention and care.
+      </p>
+    </div>
+
+  </div>
+</section>
 
       
       <div className="max-w-7xl mx-auto px-6 py-40">
