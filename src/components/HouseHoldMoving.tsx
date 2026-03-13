@@ -155,7 +155,7 @@ const HouseholdMoving = () => {
       />
 
       <div className="absolute -bottom-6 -right-6 bg-yellow-500 text-blue-900 px-6 py-4 rounded-xl font-semibold shadow-xl">
-        Pan-India Relocation 🏠
+        Note-: NCR Area Relocation 🏠
       </div>
     </div>
 
