@@ -1,8 +1,5 @@
-// src/firebase.ts
-
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
-// optional (analytics)
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
@@ -15,11 +12,12 @@ const firebaseConfig = {
   measurementId: "G-7NV1EEMPKW"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// ✅ FIRESTORE (VERY IMPORTANT)
+// ✅ Firestore
 export const db = getFirestore(app);
 
-// ✅ optional analytics (can keep or remove)
-const analytics = getAnalytics(app);
+// ✅ Analytics (safe for build)
+if (typeof window !== "undefined") {
+  getAnalytics(app);
+}
