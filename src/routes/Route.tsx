@@ -11,6 +11,7 @@ import CarTransportation from "@/components/CarTransportation";
 import IntercityTransport from "@/pages/IntercityTransport";
 import TermsAndConditions from "@/pages/TermsAndConditons";
 import ScrollToTop from "@/components/ScrollToTop";
+import TrackingPage from "@/components/TrackingPage";
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
           <Route path="/cartransportation" element={<CarTransportation />} />
           <Route path="/intercity-transport" element={<IntercityTransport />} />
           <Route path="/termsandconditons" element={<TermsAndConditions />} />
+          <Route path="/trackingpage" element={<TrackingPage />} />
+
+          
         </Route>
       </Routes>
     </HashRouter>

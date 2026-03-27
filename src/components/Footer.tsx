@@ -87,9 +87,16 @@ export const Footer: React.FC = () => {
               Intercity Transports
             </li>
 
-            <br></br>
+            {/* <br></br> */}
 
-            <li className="relative group cursor-not-allowed text-gray-400">
+            <li
+              onClick={() => navigate("/trackingpage")}
+              className="cursor-pointer hover:text-yellow-400 hover:underline"
+            >
+              Track vehicle
+            </li>
+
+            {/* <li className="relative group cursor-not-allowed text-gray-400">
               Express Delivery
               <span
                 className="absolute left-1/2 -translate-x-1/2 -top-8
@@ -98,7 +105,7 @@ export const Footer: React.FC = () => {
               >
                 This is not available
               </span>
-            </li>
+            </li> */}
           </ul>
         </div>
 

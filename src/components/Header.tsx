@@ -171,6 +171,10 @@ const Header: React.FC = () => {
           <Link to="/contact" className="hover:text-yellow-400 transition">
             Contact
           </Link>
+
+            <Link to="/trackingpage" className="hover:text-yellow-400 transition">
+            Track Vehicle
+          </Link>
         </nav>
 
         {/* Mobile Toggle Button */}

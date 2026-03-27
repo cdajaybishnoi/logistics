@@ -1,16 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import {
-  Truck,
-  Package,
-  Globe,
-  Warehouse,
-  ShieldCheck,
-} from "lucide-react";
+import { Truck, Package, Globe, Warehouse, ShieldCheck } from "lucide-react";
 
 const Services: React.FC = () => {
   const navigate = useNavigate();
-
 
   const deliveryCities = [
     "Gurgaon",
@@ -44,7 +37,8 @@ const Services: React.FC = () => {
     "Guwahati",
     "Haridwar",
     "Hisar",
-    "Hyderabad", "Rajgarh",
+    "Hyderabad",
+    "Rajgarh",
     "Jammu",
     "Jamshedpur",
     "Jodhpur",
@@ -80,22 +74,21 @@ const Services: React.FC = () => {
     "Pune",
     "Zirakpur",
     "Ujjain",
-   
   ];
 
   return (
     <section className="bg-gradient-to-b from-blue-50 to-white">
       <div className="relative h-[350px] flex items-center justify-center">
-         <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-            className="absolute inset-0 w-full h-full object-cover"
-          >
-            <source src="/videos/videocargo.mp4" type="video/mp4" />
-          </video>
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/videos/videocargo.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-blue-900/70"></div>
 
         <div className="relative text-center text-white px-4">
@@ -110,16 +103,16 @@ const Services: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
           <div
-          
-           onClick={() => navigate("/cartransportation")}
-            style={{ cursor: "pointer" }}>
-          <ServiceCard
-            icon={<ShieldCheck />}
-            title="Vehicle Transportation"
-            description="Our main focus is safe, reliable, and fully insured transportation of cars, bikes, and luxury vehicles. We use specialized carriers, real-time tracking, and experienced drivers to ensure your vehicles reach their destination securely, on time, and damage-free. Whether it’s intercity or nationwide, we provide professional logistics tailored for automobiles."
-            image="https://images.unsplash.com/photo-1502877338535-766e1452684a"
-            badges={["Popular","Active"]}
-          />
+            onClick={() => navigate("/cartransportation")}
+            style={{ cursor: "pointer" }}
+          >
+            <ServiceCard
+              icon={<ShieldCheck />}
+              title="Vehicle Transportation"
+              description="Our main focus is safe, reliable, and fully insured transportation of cars, bikes, and luxury vehicles. We use specialized carriers, real-time tracking, and experienced drivers to ensure your vehicles reach their destination securely, on time, and damage-free. Whether it’s intercity or nationwide, we provide professional logistics tailored for automobiles."
+              image="https://images.unsplash.com/photo-1502877338535-766e1452684a"
+              badges={["Popular", "Active"]}
+            />
           </div>
           <div
             onClick={() => navigate("/householdmoving")}
@@ -128,9 +121,20 @@ const Services: React.FC = () => {
             <ServiceCard
               icon={<Truck />}
               title="Household Moving"
-              description="End-to-end moving solutions for homes and offices across cities, ensuring complete safety and timely delivery.Moving homes is more than shifting belongings—it’s about moving memories, comfort, and trust.Whether you’re moving across the city or to a new destination, our experienced team ensures your household goods reach your new home safely. Note-:( Available only in NCR )"
+              description={
+                <>
+                  End-to-end moving solutions for homes and offices across
+                  cities, ensuring complete safety and timely delivery. Moving
+                  homes is more than shifting belongings—it’s about moving
+                  memories, comfort, and trust.Our experienced team ensures
+                  your household goods reach your new home safely.
+                  <span className="block mt-2 font-semibold text-yellow-600">
+                    ⚠ Note: Available only in NCR
+                  </span>
+                </>
+              }
               image="https://images.unsplash.com/photo-1600518464441-9154a4dea21b"
-              badges={["Active","Popular"]}
+              badges={["Active", "Popular"]}
             />
           </div>
 
@@ -138,13 +142,13 @@ const Services: React.FC = () => {
             onClick={() => navigate("/intercity-transport")}
             style={{ cursor: "pointer" }}
           >
-          <ServiceCard
-            icon={<Globe />}
-            title="Intercity Transport"
-            description="Intercity transport requires reliability, precision, and trust—and that’s exactly what we deliver. We provide safe and efficient transportation solutions designed to move your goods seamlessly between cities. Whether it’s household belongings, commercial consignments, or valuable cargo, our services ensure secure handling at every stage of the journey."
-            image="https://imgs.search.brave.com/0nmeHFBe71S6RFXlSpWRbYnWiil1qhz4i4tR3DMMPZg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c2h1dHRlcnN0b2Nr/LmNvbS9pbWFnZS1w/aG90by9vdXRzaWRl/LWxvZ2lzdGljcy1k/aXN0cmlidXRpb25z/LXdhcmVob3VzZS1k/aXZlcnNlLTYwMG53/LTIwNDI5NTI0MjUu/anBn"
-            badges={["Active"]}
-          />
+            <ServiceCard
+              icon={<Globe />}
+              title="Intercity Transport"
+              description="Intercity transport requires reliability, trust—and that’s exactly what we deliver. We provide safe and efficient transportation solutions designed to move your goods seamlessly between cities. Whether it’s household belongings, commercial consignments, or valuable cargo, our services ensure secure handling at every stage of the journey."
+              image="https://imgs.search.brave.com/0nmeHFBe71S6RFXlSpWRbYnWiil1qhz4i4tR3DMMPZg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c2h1dHRlcnN0b2Nr/LmNvbS9pbWFnZS1w/aG90by9vdXRzaWRl/LWxvZ2lzdGljcy1k/aXN0cmlidXRpb25z/LXdhcmVob3VzZS1k/aXZlcnNlLTYwMG53/LTIwNDI5NTI0MjUu/anBn"
+              badges={["Active"]}
+            />
           </div>
 
           <ServiceCard
@@ -227,10 +231,10 @@ const ServiceCard = ({
   description,
   image,
   badges = [],
-}: {
+  }: {
   icon: React.ReactNode;
   title: string;
-  description: string;
+  description: React.ReactNode;
   image: string;
   badges: Array<"Active" | "Popular" | "Coming Soon">;
 }) => (
@@ -253,7 +257,7 @@ const ServiceCard = ({
         <div className="absolute top-3 right-3 px-3 py-1 rounded-full text-xs font-bold bg-green-500 text-white shadow-md">
           Active
         </div>
-      )}
+      )} 
 
       {badges.includes("Coming Soon") && (
         <div className="absolute top-3 right-3 px-3 py-1 rounded-full text-xs font-bold bg-yellow-400 text-gray-800 shadow-md">
