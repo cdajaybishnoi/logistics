@@ -3,6 +3,9 @@ import { useNavigate } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Car, Truck, Star, IndianRupee, ChessKing } from "lucide-react";
+import cartransportaion from "../assets/cartransportation.webp"
+import carparked from "../assets/carparked.webp"
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -87,7 +90,7 @@ const CarTransportation = () => {
                 loading="lazy" 
                  width="400" 
                  height="300" 
-                src="https://images.unsplash.com/photo-1502877338535-766e1452684a"
+                src= {cartransportaion}
                 alt="Car transport"
                 className="rounded-3xl shadow-2xl"
               />
@@ -163,7 +166,7 @@ const CarTransportation = () => {
     {/* IMAGE */}
     <div className="relative">
       <img
-        src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop"
+        src={carparked}
         alt="Car Transport"
         className="rounded-3xl shadow-2xl"
       />

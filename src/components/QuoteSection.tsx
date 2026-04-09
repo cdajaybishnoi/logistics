@@ -108,7 +108,7 @@ ${formData.message}
             <div className="flex gap-4 pt-2">
               <button
                 type="submit"
-                className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg font-semibold shadow-md"
+                className="bg-blue-900 hover:bg-green-600 text-white px-6 py-2 rounded-lg font-semibold shadow-md"
               >
                 Send on WhatsApp
               </button>
