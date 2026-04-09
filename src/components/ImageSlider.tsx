@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import shipmycar from "../assets/shipmycar.jpeg";
+import shipmycar from "../assets/shipmycar.webp";
 const images = [
   shipmycar,
-  "https://i-media.vyaparify.com/vcards/blogs/103758/Secure-Car-Transport-Solutions.jpeg",
+  "https://i-media.vyaparify.com/vcards/blogs/103758/Secure-Car-Transport-Solutions.webp",
   "https://www.kcmpackers.com/assets/img/gallery/gallery3.jpg",
   "https://image.automotivelogistics.media/178244.webp?imageId=178244&width=960&height=640&format=jpg",
   "https://indiashippingnews.com/wp-content/uploads/2025/08/indian-logistics.webp",
@@ -37,7 +37,8 @@ const ImageSlider: React.FC = () => {
             key={index}
             src={src}
             alt={`Slide ${index}`}
-            className="w-full h-[500px] flex-shrink-0 object-cover" 
+            className="w-full h-[500px] flex-shrink-0 object-cover"
+             loading={index === 0 ? "eager" : "lazy"} 
           />
         ))}
       </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
-import shiplogo from "../assets/shiplogo.jpeg";
+import shiplogo from "../assets/shiplogo.webp";
 
 export const Footer: React.FC = () => {
   const navigate = useNavigate();

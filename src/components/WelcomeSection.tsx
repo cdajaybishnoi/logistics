@@ -1,9 +1,9 @@
 // src/components/WelcomeSection.tsx
  
 import React from 'react';
-import ImageSlider from './ImageSlider';
+// import ImageSlider from './ImageSlider';
 import { useNavigate } from 'react-router-dom';
-
+import herobackgroundimage from "../assets/herobackgroundimage.webp"
 
  
 const WelcomeSection: React.FC = () => {
@@ -12,10 +12,10 @@ const WelcomeSection: React.FC = () => {
 <>
 
     <section
-      className="relative min-h-screen bg-cover bg-[center_top] flex items-center justify-center"
+    className="relative min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
      
       // style={{ backgroundImage: "url('https://i.pinimg.com/736x/da/53/86/da53869395aa62dfa9ed5372ae628f6d.jpg')" }}
-            style={{ backgroundImage: "url('https://imgs.search.brave.com/tc4yW56lng2lNG-dSbd06KfvQ0Y5ri2KLw3RbwunhV0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjEv/NDUwLzQ5NS9zbWFs/bC9sb2FkaW5nLWNh/ci1mb3ItdGhlLXRy/YW5zcG9ydGF0aW9u/LXBob3RvLmpwZw')"}}
+            style={{  backgroundImage: `url(${herobackgroundimage})` }}
     >
      
       <div className="absolute inset-0 bg-black/60"></div>
@@ -58,16 +58,9 @@ const WelcomeSection: React.FC = () => {
           </button>
  
         </div>
-        <br>
-        </br>
-         <br>
-        </br>
-         <br>
-        </br>
-         <br>
-        </br>
+        
 
-<ImageSlider/>
+{/* <ImageSlider/> */}
 
 {/* <MagicBento 
   textAutoHide={true}

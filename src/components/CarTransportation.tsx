@@ -84,6 +84,9 @@ const CarTransportation = () => {
 
             <div className="hidden md:block fade-up">
               <img
+                loading="lazy" 
+                 width="400" 
+                 height="300" 
                 src="https://images.unsplash.com/photo-1502877338535-766e1452684a"
                 alt="Car transport"
                 className="rounded-3xl shadow-2xl"

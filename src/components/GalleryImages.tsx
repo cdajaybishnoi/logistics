@@ -1,31 +1,31 @@
 import React, { useState } from "react";
 import { X } from "lucide-react";
 
-import carsecond from "../assets/car2.1.jpeg";
-import carthree from "../assets/car2.2.jpeg";
-import carfour from "../assets/car2.3.jpeg";
-import carfive from "../assets/car2.4.jpeg";
-import carsix from "../assets/car2.5.jpeg";
-import carseven from "../assets/car2.6.jpeg";
-import careight from "../assets/car2.7.jpeg";
-import carnine from "../assets/car2.8.jpeg";
-import carten from "../assets/car2.9.jpeg";
-import careleven from "../assets/car2.10.jpeg";
-import cartwlave from "../assets/car2.11.jpeg";
-import car12 from "../assets/car12.jpeg";
-import car13 from "../assets/car13.jpeg";
-import car14 from "../assets/car14.jpeg";
-import car15 from "../assets/car15.jpeg";
-import car16 from "../assets/car16.jpeg";
-import car17 from "../assets/car17.jpeg";
-import car18 from "../assets/car18.jpeg";
-import car19 from "../assets/car19.jpeg";
-import car20 from "../assets/car20.jpeg";
-import car21 from "../assets/car21.jpeg";
-import car22 from "../assets/car22.jpeg";
-import car23 from "../assets/car23.jpeg";
-import car24 from "../assets/car24.jpeg";
-import car25 from "../assets/car25.jpeg";
+import carsecond from "../assets/car2.1.webp";
+import carthree from "../assets/car2.2.webp";
+import carfour from "../assets/car2.3.webp";
+import carfive from "../assets/car2.4.webp";
+import carsix from "../assets/car2.5.webp";
+import carseven from "../assets/car2.6.webp";
+import careight from "../assets/car2.7.webp";
+import carnine from "../assets/car2.8.webp";
+import carten from "../assets/car2.9.webp";
+import careleven from "../assets/car2.10.webp";
+import cartwlave from "../assets/car2.11.webp";
+import car12 from "../assets/car12.webp";
+import car13 from "../assets/car13.webp";
+import car14 from "../assets/car14.webp";
+import car15 from "../assets/car15.webp";
+import car16 from "../assets/car16.webp";
+import car17 from "../assets/car17.webp";
+import car18 from "../assets/car18.webp";
+import car19 from "../assets/car19.webp";
+import car20 from "../assets/car20.webp";
+import car21 from "../assets/car21.webp";
+import car22 from "../assets/car22.webp";
+import car23 from "../assets/car23.webp";
+import car24 from "../assets/car24.webp";
+import car25 from "../assets/car25.webp";
 
 
 

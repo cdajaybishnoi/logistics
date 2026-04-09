@@ -1,7 +1,7 @@
 // import React, { useState } from "react";
 
 // import { Link } from "react-router-dom";
-// import shiplogo from "../assets/shiplogo.jpeg";
+// import shiplogo from "../assets/shiplogo.webp";
 
 // const Header: React.FC = () => {
 //   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -124,7 +124,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import shiplogo from "../assets/shiplogo.jpeg";
+import shiplogo from "../assets/shiplogo.webp";
 
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -172,9 +172,9 @@ const Header: React.FC = () => {
             Contact
           </Link>
 
-            <Link to="/trackingpage" className="hover:text-yellow-400 transition">
+            {/* <Link to="/trackingpage" className="hover:text-yellow-400 transition">
             Track Vehicle
-          </Link>
+          </Link> */}
         </nav>
 
         {/* Mobile Toggle Button */}

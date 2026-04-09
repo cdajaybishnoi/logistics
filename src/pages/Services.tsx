@@ -163,7 +163,7 @@ const Services: React.FC = () => {
             icon={<Warehouse />}
             title="Warehousing & Storage"
             description="Secure, monitored, and flexible storage solutions for short-term and long-term needs, keeping your goods safe and organized."
-            image="https://images.pexels.com/photos/257636/pexels-photo-257636.jpeg?cs=srgb&dl=pexels-pixabay-257636.jpg&fm=jpg"
+            image="https://images.pexels.com/photos/257636/pexels-photo-257636.webp?cs=srgb&dl=pexels-pixabay-257636.jpg&fm=jpg"
             badges={["Coming Soon"]}
           />
         </div>

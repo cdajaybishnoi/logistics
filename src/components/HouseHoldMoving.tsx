@@ -100,7 +100,7 @@ const HouseholdMoving = () => {
 
             <div className="hidden md:block">
               <img
-                src="https://hometriangle.com/blogs/content/images/2023/02/AdobeStock_458017513.jpeg"
+                src="https://hometriangle.com/blogs/content/images/2023/02/AdobeStock_458017513.webp"
                 alt="Household Moving"
                 className="rounded-3xl shadow-2xl"
               />
