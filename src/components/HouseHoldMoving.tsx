@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ClipboardList, PackageCheck, Truck, Home as HomeIcon } from "lucide-react";
+import housemoving from "../assets/housemoving.webp"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -149,7 +150,7 @@ const HouseholdMoving = () => {
     {/* IMAGE FIRST */}
     <div className="relative order-2 md:order-1">
       <img
-        src="https://media.istockphoto.com/id/2167994300/photo/caucasian-delivery-man-worker-delivering-package-to-young-couple-in-house-attractive-courier.jpg?s=1024x1024&w=is&k=20&c=OW-yxcXQ-XwQdZtN_pClyWOo81498wbTbCqRMBvH3v4="
+        src={housemoving}
         alt="Household Moving"
         className="rounded-3xl shadow-2xl"
       />
