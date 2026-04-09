@@ -1,6 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Truck, Package, Globe, Warehouse, ShieldCheck } from "lucide-react";
+import cartransportation from "../assets/cartransportation.webp";
+import householdmoving from "../assets/householdmoving.webp";
+
+import packingandunpacking from "../assets/packingandunpacking.webp";
+import warehousingandmoving from "../assets/warehousingandmoving.webp";
+
+
 
 const Services: React.FC = () => {
   const navigate = useNavigate();
@@ -110,7 +117,7 @@ const Services: React.FC = () => {
               icon={<ShieldCheck />}
               title="Vehicle Transportation"
               description="Our main focus is safe, reliable, and fully insured transportation of cars, bikes, and luxury vehicles. We use specialized carriers, real-time tracking, and experienced drivers to ensure your vehicles reach their destination securely, on time, and damage-free. Whether it’s intercity or nationwide, we provide professional logistics tailored for automobiles."
-              image="https://images.unsplash.com/photo-1502877338535-766e1452684a"
+              image= {cartransportation}
               badges={["Popular", "Active"]}
             />
           </div>
@@ -133,7 +140,7 @@ const Services: React.FC = () => {
                   </span>
                 </>
               }
-              image="https://images.unsplash.com/photo-1600518464441-9154a4dea21b"
+              image={householdmoving}
               badges={["Active", "Popular"]}
             />
           </div>
@@ -155,7 +162,7 @@ const Services: React.FC = () => {
             icon={<Package />}
             title="Packing & Unpacking"
             description="High-quality packing materials and expert handling ensure damage-free movement for both personal and commercial shipments."
-            image="https://images.unsplash.com/photo-1586864387789-628af9feed72"
+            image={packingandunpacking}
             badges={["Coming Soon"]}
           />
 
@@ -163,7 +170,7 @@ const Services: React.FC = () => {
             icon={<Warehouse />}
             title="Warehousing & Storage"
             description="Secure, monitored, and flexible storage solutions for short-term and long-term needs, keeping your goods safe and organized."
-            image="https://images.pexels.com/photos/257636/pexels-photo-257636.webp?cs=srgb&dl=pexels-pixabay-257636.jpg&fm=jpg"
+            image={warehousingandmoving}
             badges={["Coming Soon"]}
           />
         </div>
